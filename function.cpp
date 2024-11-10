@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
-
-int sum( int a, int b) //its fxn
+int sum( int a, int b) 
 {
 int c=a+b;
 return c;
@@ -9,6 +8,7 @@ return c;
 int main()
 {
 int num1,num2;
+
 cout<<"enter the first value"<<endl;
 cin>>num1;
 cout<<"enter the second value"<<endl;
@@ -21,10 +21,11 @@ cout<<"the sum is"<<sum(num1,num2);
  #include<<iostrem>>
  using namespace std;
 
+//type function-name(argument)
 int sum(int a, int b); //it is a prototype
 
 int main(){
-    int num1,num2;
+    int num1,num2;//num1 and num2 are actual parameters.
     cout<<"enter first value"<<endl;
     cin>>num1;
     cout<<"enter second value"<<endl;
@@ -33,9 +34,11 @@ int main(){
     return 0;
 
 }
-int sum(int a, int b){
+int sum(int a, int b)//int a,int b are formal parameter they takes from actual parameter
+{
  int c=a+b
  return c;
+
 }
 
 
